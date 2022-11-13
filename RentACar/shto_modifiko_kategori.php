@@ -4,18 +4,22 @@ if(isset($_POST['shtoKategori']))
 {
     shtoKategori($_POST['emri'],$_POST['pershkrimi']);
 }
+else
+
 if(isset($_POST['modifikoKategori']))
 {
+  
     modifikoKategori($_POST['kategoriid'],$_POST['emri'], $_POST['pershkrimi']);
 }
 
 if($_GET['kid'])
 {
-    $kategoriid = $_GET['kid'];
-    $kategori = merrKategoriId($kategoriid);
-    $emri  = $kategori['emri'];
-    $pershkrimi = $kategori['pershkrimi'];
+$kategoriid = $_GET['kid'];
+$kategori = merrKategoriId($kategoriid);
+$emri  = $kategori['emri'];
+$pershkrimi = $kategori['pershkrimi'];
 }
+
     
 ?>
 

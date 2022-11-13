@@ -1,7 +1,7 @@
 <footer class="main-footer">
     <div class="main-footer-content container">
         <div>
-            <p>&copy; Rent a Car 2021. All rights reserved.</p>
+            <p>&copy; Erblin Berisha 2022. All rights reserved.</p>
         </div>
         <div class="social-media">
             <div>

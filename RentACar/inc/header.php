@@ -34,8 +34,19 @@ include "functions.php";
                     <li><a href="automjetet.php">Automjetet</a></li>
                     <li><a href="kategorit.php">Kategorit</a></li>
                     <li><a href="perdoruesit.php">Perdoruesit</a></li>
-                    <li><a href="rezervimet.php">Rezervimet</a></li>
-                    <li><a href="login.php">Login</a></li>
+                    
+                    <?php
+                    if(!isset($_SESSION['user']))
+                    {
+                        echo  '<li><a href="login.php">Login</a></li>';
+                    }else
+                    {
+                        echo '<li><a href="rezervimet.php">Rezervimet</a></li>';
+                        echo  '<li><a href="logout.php">Logout</a></li>';
+                    }
+                       
+                    ?>
+                    
                 </ul>
             </div>
         </div>

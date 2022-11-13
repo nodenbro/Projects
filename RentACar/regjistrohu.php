@@ -1,8 +1,5 @@
 <?php
-    // if(isset($_POST['register']))
-    // {
-    //     register($_POST['emri'], $_POST['mbiemri'], $_POST['email'], $_POST['telefoni'], $_POST['fjalekalimi'], $_POST['nrpersonal'], $_POST['adresa']);
-    // }
+
 
     if(isset($_POST['register'])){
         $dbconn = mysqli_connect('localhost', 'root', '', 'rentacar');
@@ -24,7 +21,7 @@
         $res = mysqli_query($dbconn, $sql);
         if($res)
         {
-            header("Location: login.php");
+            header("Location: index.php");
         }
         else
         {
