@@ -1,0 +1,14 @@
+{
+    "require" : {
+        "illuminate/database": "^10.2",
+        "joeyrush/better-dd": "^1.4",
+        "twig/twig": "^3.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Core\\": "Core/",
+            "App\\": "App/",
+            "Views\\": "Views/"
+        }
+    }
+}
