@@ -5,7 +5,6 @@
 <section class="section1">
     <div class="slide-bar">
         <div class="img">
-
         </div>
     </div>
 </section>
