@@ -43,8 +43,8 @@
                 while ($antari = mysqli_fetch_assoc($antaret)) 
                 {
                     $aid=$antari['antariid'];
-                    
-                    if($aid <= 16)
+
+                    if($aid <= 26)
                     {
                         
                         if($i%2 == 0)
