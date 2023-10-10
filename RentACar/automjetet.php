@@ -27,7 +27,7 @@
                 echo "<td>" . $automjetet['pershkrimi'] . "</td>";
                 echo "<td>" . $automjetet['nrregjistrimi'] . "</td>";
                 echo "<td>" . $automjetet['vitiprodhimit'] . "</td>";
-                echo "<td>" . $automjetet['cmimi'] . "</td>";
+                echo "<td>" . $automjetet['cmimi'] . "€" . "</td>";
                 echo "<td><a href='shto_modifiko_automjete.php?autoid={$autoid}'>
                 <i class='fas fa-edit'></i></a></td>";
                 echo "<td><a href='fshijautomjete.php?autoid={$autoid}'>

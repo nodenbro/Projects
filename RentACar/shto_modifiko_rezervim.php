@@ -54,7 +54,7 @@ if (isset($_POST['modifikorezervim'])) {
                     if (isset($_GET['rid'])) {
                         echo "<option value='$klintid'>$klintemrimbiemri</option>";
                     } else {
-                        echo "<option value=''>Zgjedh klientin </option>";
+                        echo "<option value='' disabled selected hidden>Zgjedh klientin </option>";
                     }
                     $klientet = merrKlientet();
                     while ($klienti = mysqli_fetch_assoc($klientet)) {
@@ -80,7 +80,7 @@ if (isset($_POST['modifikorezervim'])) {
                     if (isset($_GET['rid'])) {
                         echo "<option value='$autoid'>$autoemri</option>";
                     } else {
-                        echo "<option value=''>Zgjedh automjetin </option>";
+                        echo "<option value='' disabled selected hidden>Zgjedh automjetin </option>";
                     }
                     $automjetet = merrAutomjetet();
                     while ($automjeti = mysqli_fetch_assoc($automjetet)) {

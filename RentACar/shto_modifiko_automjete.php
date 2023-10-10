@@ -95,13 +95,13 @@ if(isset($_POST['modifikoAutomjet']))
             </div>
             <div class="inputAndLabels">
                 <label for="pershkrimi">Viti i Prodhimit</label> <br>
-                <input type="text" id="vitiprodhimit" name="vitiprodhimit"
+                <input type="number" min="1900" max="2023" step="1" id="vitiprodhimit" name="vitiprodhimit"
                 value="<?php if(!empty($vitiprodhimit)) echo "$vitiprodhimit" ?>">
             </div>
             <div class="inputAndLabels">
                 <label for="kostoja">Kostoja</label> <br>
-                <input type="text" id="cmimi" name="cmimi"
-                value="<?php if(!empty($cmimi)) echo "$cmimi" ?>">
+                <input type="number" id="cmimi" name="cmimi"
+                value="<?php if(!empty($cmimi)) echo "$cmimi"?>">
             </div>
             <div class="inputAndLabels">
                 <div class="butonat">
