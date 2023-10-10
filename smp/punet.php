@@ -40,39 +40,37 @@
                 </tr>
 
         <?php
-                $punet = merrPunet();
-                if($punet)
+            $punet = merrPunet();
+            if($punet)
+            {
+                $i = 0;
+                while ($puna = mysqli_fetch_assoc($punet)) 
                 {
-                    $i = 0;
-                    if($i == 9) 
-                    {
-                        $i = 0;
-                    }
-                    else
-                    {
-                        while ($puna = mysqli_fetch_assoc($punet)) 
-                        {
 
-                            $pid=$puna['punaid'];
-                            if($i%2 == 0)
-                            {
-                                echo "<tr>";
-                            }
-                            else
-                            {
-                                echo "<tr class='alt'>";
-                            }
-                            $i++;
-                            echo "<td>" .$puna['emri']."</td>";
-                            echo "<td>" .$puna['data'] ."</td>";
-                            echo "<td>" .$puna['pershkrimi'] ."</td>";
-                            echo "<td> <a href='modifikopune.php?pid={$pid}'>Edit</a> </td>";
-                            echo "<td> <a href='fshijpune.php?pid={$pid}'>Delete</a> </td>";
-                            echo "</tr>";
+                    $pid=$puna['punaid'];
+
+                    if($pid <= 16) 
+                    {
+                        if($i%2 == 0)
+                        {
+                            echo "<tr>";
                         }
+                        else
+                        {
+                            echo "<tr class='alt'>";
+                        }
+                        
+                        echo "<td>" .$puna['emri']."</td>";
+                        echo "<td>" .$puna['data'] ."</td>";
+                        echo "<td>" .$puna['pershkrimi'] ."</td>";
+                        echo "<td> <a href='modifikopune.php?pid={$pid}'>Edit</a> </td>";
+                        echo "<td> <a href='fshijpune.php?pid={$pid}'>Delete</a> </td>";
+                        echo "</tr>";
+                        $i++;
                     }
                 }
-
+            }
+            
         ?>
             </table>
         </section>

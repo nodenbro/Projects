@@ -36,13 +36,17 @@
                 </tr>
 
         <?php
-                $antaret = merrAntaret();
-                if($antaret)
+            $antaret = merrAntaret();
+            if($antaret)
+            {
+                $i = 0;
+                while ($antari = mysqli_fetch_assoc($antaret)) 
                 {
-                    $i = 0;
-                    while ($antari = mysqli_fetch_assoc($antaret)) {
-
-                        $aid=$antari['antariid'];
+                    $aid=$antari['antariid'];
+                    
+                    if($aid <= 16)
+                    {
+                        
                         if($i%2 == 0)
                         {
                             echo "<tr>";
@@ -60,11 +64,10 @@
                         echo "</tr>";
                     }
                 }
+            }
 
         ?>
             </table>
-                
-
         </section>
     </main>
 

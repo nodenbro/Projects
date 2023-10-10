@@ -20,18 +20,18 @@
 
         <section id="content" class="box">
 
-        <h3 class="title">
-            Lista e projekteve
-        </h3>
+            <h3 class="title">
+                Lista e projekteve
+            </h3>
 
 
-            <a class="addProject" href="shtoprojekte.php">Shto Projekte</a>
-            
-            <div id = "message">
-                <p><?php if(isset($_SESSION['message'])) echo $_SESSION['message']; ?></p>
-            </div>
+                <a class="addProject" href="shtoprojekte.php">Shto Projekte</a>
+                
+                <div id = "message">
+                    <p><?php if(isset($_SESSION['message'])) echo $_SESSION['message']; ?></p>
+                </div>
 
-        <table id="members">    
+            <table id="members">    
                 <tr>
                     <th>Emri</th>
                     <th>Data e Fillimit</th>
@@ -41,38 +41,41 @@
                     <th>Delete</th>
                 </tr>
 
-        <?php
+            <?php
 
                 $projektet = merrProjektet();
                 if($projektet)
                 {
                     $i = 0;
-                    while ($projekti = mysqli_fetch_assoc($projektet)) {
-
+                    while ($projekti = mysqli_fetch_assoc($projektet)) 
+                    {
                         $pid = $projekti['projektiid'];
-                        if ($i%2 == 0)
+                        if($pid <= 16)
                         {
-                            echo "<tr>";
-                        }
-                        else
-                        {
-                            echo "<tr class='alt'>";
-                        }
+                            if ($i%2 == 0)
+                            {
+                                echo "<tr>";
+                            }
+                            else
+                            {
+                                echo "<tr class='alt'>";
+                            }
 
-                            echo "<td>" . $projekti['emri'] . "</td>";
-                            echo "<td>" . $projekti['datafillimit'] . "</td>";
-                            echo "<td>" . $projekti['datambarimit'] .  "</td>";
-                            echo "<td>" . $projekti['pershkrimi'] . "</td>";
-                            echo "<td> <a href = 'modifikoprojekte.php?pid={$pid}'>Edit </a>";
-                            echo "<td> <a href = 'fshijprojekte.php?pid={$pid}'>Delete </a>";
-                            echo "</tr>";
-                        $i++;
+                                echo "<td>" . $projekti['emri'] . "</td>";
+                                echo "<td>" . $projekti['datafillimit'] . "</td>";
+                                echo "<td>" . $projekti['datambarimit'] .  "</td>";
+                                echo "<td>" . $projekti['pershkrimi'] . "</td>";
+                                echo "<td> <a href = 'modifikoprojekte.php?pid={$pid}'>Edit </a>";
+                                echo "<td> <a href = 'fshijprojekte.php?pid={$pid}'>Delete </a>";
+                                echo "</tr>";
+                            $i++;
+                        }
                     }
+
                 }
 
-        ?>
+            ?>
 
-                
             </table>               
         </section>
     </main>
