@@ -1,0 +1,37 @@
+{
+  "name": "student-login",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve --port 3000",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "bootstrap": "^4.6.1",
+    "bootstrap-vue": "^2.23.1",
+    "core-js": "^3.8.3",
+    "jw-paginate": "^1.0.4",
+    "jw-vue-pagination": "^1.0.3",
+    "popper.js": "^1.16.0",
+    "portal-vue": "2.1",
+    "vue": "^2.6.14",
+    "vue-class-component": "^7.2.3",
+    "vue-property-decorator": "^9.1.2",
+    "vue-router": "^3.5.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-router": "~5.0.0",
+    "@vue/cli-plugin-typescript": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "sass": "^1.66.1",
+    "sass-loader": "^12.0.0",
+    "typescript": "~4.5.5",
+    "vue-template-compiler": "^2.6.14"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

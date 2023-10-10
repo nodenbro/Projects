@@ -1,0 +1,101 @@
+h3 {
+    margin: 40px 0 0;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+
+  a {
+    color: #42b983;
+  }
+
+  .inner-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border: 2px solid white;
+    border-radius: 10px;
+    max-width: 1500px;
+    height: 800px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(75.7deg, rgb(34, 126, 34) 3.8%, rgb(99, 162, 17) 87.1%);
+
+    form {
+      width: 50%;
+      height: 60%;
+      margin: auto;
+      border: 2px solid white;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .login-content {
+        font-size: 1.2rem;
+        align-items: center;
+        margin: 0 auto;
+
+        .logo {
+          margin: 0 auto;
+          width: 50%;
+        }
+
+        input {
+          align-items: center;
+          margin-bottom: 5%;
+          border:1px solid black;
+          border-radius: 3px;
+          width: 100%;
+          height: 12%;
+        }
+
+        label {
+          margin-bottom: 5%;
+          font-size: 1.2rem;
+          text-align: center;
+          display: block;
+          color: #fff;
+          font-weight: bold;
+          font-style: italic;
+        }
+      }
+
+      .button {
+        margin: 0 auto;
+        margin-top: 2%;
+        width: 25%;
+        height: 9%;
+        border: 1px solid gray;
+        border-radius: 7px;
+        font-size: 1.1rem;
+        font-weight: bold;
+        color: white;
+        background-color: #7CFC00;
+        transition: background-color .5s ease-out 20ms;
+        box-shadow: 0 6px #7CFC00;
+
+        &:hover {
+          background-color: #00A36C;
+          box-shadow: 0 6px #2AAA8A;
+        }
+
+        &:active {
+          background-color: #478778;
+          box-shadow: 0 5px #2AAA8A;
+          transform: translateY(4px);
+        }
+      }
+    }
+  }
+
