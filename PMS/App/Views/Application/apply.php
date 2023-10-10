@@ -20,7 +20,6 @@ use App\Models\Application;
                   <div class="mail_section">
                 <form method="post" action="apply-success" id="apply" enctype="multipart/form-data">
                       <input type="hidden" name="id" value="<?php echo $company->id ?>">
-                      <?php echo $company->id ?>
 
                       <?php $cmp = Listing::get()->where('company_id', $company->id)->first() ?>
 
