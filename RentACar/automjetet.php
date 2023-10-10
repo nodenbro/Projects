@@ -13,7 +13,7 @@
             <th>Viti i Prodhimit</th>
             <th>Kostoja</th>
             <th>Modifiko</th>
-            <th>Fshiej</th>
+            <th>Fshije</th>
         </tr>
         </thead>
         <tbody>
