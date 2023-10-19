@@ -1,0 +1,96 @@
+
+.new-custom-cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.new-custom-card-page,
+.new-custom-card-business,
+.new-custom-card-service {
+    flex: 1 0 220px; 
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    transition: box-shadow 0.3s ease-in-out;
+    margin: 10px;
+}
+
+.new-custom-card-image img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    height: 200px;
+   
+}
+
+.new-custom-title {
+    display: inline-block;
+    padding: 0 10px;
+    color: #000;
+    font-size: 32px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    line-height: 27px;
+}
+
+.new-custom-btn {
+    width: 100%;
+    padding: 10px 16px;
+    border-radius: 16px;
+    background: #54d577;
+    border: none;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 21px;
+}
+
+.new-custom-link {
+    text-decoration: none;
+    color: #0f172a;
+}
+/* Stilizimi i butonave të karuselit */
+
+
+.new-custom-cards-container .slick-prev,
+.new-custom-cards-container .slick-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    color: transparent;
+    font-size: 0;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+
+    
+}
+
+.new-custom-cards-container:hover .slick-prev,
+.new-custom-cards-container:hover .slick-next {
+    opacity:1;
+}
+
+.new-custom-cards-container .slick-prev {
+    left: -3%;
+}
+
+.new-custom-cards-container .slick-next {
+    right: -3%;
+}
+
+.new-custom-cards-container .slick-prev:before,
+.new-custom-cards-container .slick-next:before {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: 900;
+    text-align: center;
+    color: #000; 
+}

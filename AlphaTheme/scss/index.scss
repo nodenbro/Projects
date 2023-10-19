@@ -1,0 +1,38 @@
+@import "modules/faq";
+@import "modules/navbar";
+@import "modules/footer.scss";
+@import "modules/bussines-profile";
+@import "modules/carousel";
+@import "modules/cta";
+@import "modules/hompage_header";
+@import "modules/proCons";
+@import "modules/quick";
+@import "modules/author";
+@import "modules/contact";
+@import 'modules/search-form';
+@import 'modules/parallax';
+@import 'modules/testimonials';
+@import 'modules/banner-module';
+@import 'modules/toplist';
+@import 'modules/modules_cards';
+// @import 'modules/toplist_section';
+@import 'modules/event.scss';
+*{
+    box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  background-color: white;
+  color: #333;
+  padding: 0;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+ 
+}
+//==============================================================================================
